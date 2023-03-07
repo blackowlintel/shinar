@@ -1,4 +1,4 @@
-# shinar
+# Shinar Osint Tool
 OSINT Tool to obtain data from Duolingo's API.
 
 # what is it
@@ -9,9 +9,12 @@ requests==2.25.1
 colorama==0.4.4
 
 # how to use
-python3 shinar.py email@domain.com
+python3 ./shinar.py email@domain.com
 
 # authors
 Brought to you by the BlackOwl Intelligence Team - @maverick and @3stkh
+
+# Find us
+www.blackowlintelligence.com
 
 
