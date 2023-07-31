@@ -34,7 +34,19 @@ if not re.match(r"^\S+@\S+\.\S+$", email):
 url = f"https://www.duolingo.com/2017-06-30/users?email={email}"
 
 # Make request to API and get response
-headers = {'User-Agent': 'Mozilla/5.0'}
+headers = {
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0',
+    'Accept': 'application/json',
+    'Accept-Language': 'en-US,en;q=0.5',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'DNT': '1',
+    'Connection': 'keep-alive',
+    'Upgrade-Insecure-Requests': '1',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'none',
+    'Sec-Fetch-User': '?1',
+}
 response = requests.get(url, headers=headers)
 
 # Check response status code
